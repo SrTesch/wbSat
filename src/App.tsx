@@ -7,7 +7,7 @@ function App() {
   ScrollRevealComponent();
   
   return (
-    <div>
+    <div className="App">
       <h1>Wb Sat</h1>
       <Home />
       <Products />
