@@ -1,6 +1,6 @@
 .footer{
     background-color: ffffffde;
-    color: green;
+    color: black;
     display: flex;
     flex-direction: row;
     padding: 0px 30px;
@@ -18,11 +18,61 @@
     flex: 1;
 }
 
+.logoImg{
+    max-width: 220px;
+}
+
+
+#number, #email, #endereço{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+
+#number, #email{
+    margin-bottom: 10px;
+}
+#number:hover, #email:hover, #endereço:hover{
+    color: #3b3b3b;
+}
+
+.icones{
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+}
+
 .inputEmail{
     border: none;
     background-color: #ffffff04;
     border-bottom: 1px solid black;
     padding: 10px;
+    padding-bottom: 0px;
+    margin: 5px 8px 5px 0px;
+    color: black;
+    outline: none;
+}
+
+.inputEmail:focus{
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#submitbutton{
+    background-color: #ff7300;
+    border: none;
+    color: black;
+    padding: 15px;
+    border: 1px solid #ff7300;
+    border-radius: 30px;
+    transition-duration: .3s;
+}
+
+#submitbutton:hover{
+    background-color: #ffffff00;
+    border: 1px solid #000000;
 }
 
 @media screen and (max-width: 960px) {
