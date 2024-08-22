@@ -1,7 +1,7 @@
 import styles from "./card.module.css"
 
 const Card = (props:any) =>{
-    const link = `https://wa.me/5521959042682?text=Olá${props.titulo}`
+    // const link = `https://wa.me/5521959042682?text=Olá${props.titulo}`
 
     return(
         <div className={styles.card} id="card">
