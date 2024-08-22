@@ -8,7 +8,7 @@ export default function ScrollRevealComponent (){
             reset: true
         })
         
-        sr.reveal('.cartao', {distance: '40px', delay: 50, origin: 'left' })
+        sr.reveal('#footer', {distance: '40px', delay: 50, origin: 'left' })
         sr.reveal('#card', {distance: '40px', delay: 50, origin: 'right' })
         sr.reveal('#titleCards', {distance: '40px', delay: 50, origin: 'left' })
 

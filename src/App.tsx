@@ -12,9 +12,7 @@ function App() {
       <Home />
       <Products />
       <About />
-      <div className="cartao">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   )
 }
