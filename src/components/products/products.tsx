@@ -1,6 +1,6 @@
 import styles from './products.module.css'
 import Card from '../card'
-import Imagem1 from "../../assets/logo.png"
+import Imagem1 from "../../assets/logo2.png"
 import OntrackingImage from "../../assets/ontracking.png"
 export default function Products(){
     return(

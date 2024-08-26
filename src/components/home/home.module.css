@@ -1,0 +1,23 @@
+.homeSection {
+    padding-top: 80px; /* ajuste para a altura do header */
+    background-image: url(../../assets/fundo_femea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+}
+
+.aux, .content{
+    flex: 1;
+}
+
+.content{
+    background-color: #008cba;
+    border-radius: 0px 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
