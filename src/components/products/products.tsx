@@ -23,7 +23,7 @@ export default function Products(){
                 <Card 
                     titulo="OnDriving"
                     texto="Sistema que avalia o comportamento do condutor de forma inteligente"
-                    detailedText="Eu sou lindo"
+                    detailedText="Sistema que avalia o comportamento do condutor de forma inteligente"
                     imagem={Imagem1}
                 />
             </div>
