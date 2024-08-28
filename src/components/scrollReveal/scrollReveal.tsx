@@ -15,7 +15,7 @@ export default function ScrollRevealComponent (){
         sr.reveal('#footer', {distance: '40px', delay: 50, origin: 'left' })
         sr.reveal('#card', {distance: '40px', delay: 50, origin: 'right' })
         sr.reveal('#titleCards', {distance: '40px', delay: 50, origin: 'left' })
-        rs.reveal('#Car', {distance: '500px', delay: 0, origin: 'right' })
+        rs.reveal('#Car', {distance: '300px', delay: 0, origin: 'right' })
 
     }, []);
 };

@@ -1,9 +1,11 @@
 .homeSection {
     padding-top: 80px; /* ajuste para a altura do header */
     background-color: white;
-    height: 400px;
+    min-height: 400px;
     display: flex;
-    overflow: hidden; /* Para que o carro não seja visível fora da área */
+    overflow: visible; /* Para que o carro não seja visível fora da área */
+    flex-wrap: wrap;
+    height: fit-content;
 }
 
 .aux, .content {
@@ -12,19 +14,36 @@
 
 .content {
     background-color: #008cba;
-    border-radius: 0px 150px;
-    padding: 20px;
+    border-radius: 0px 100px;
+    padding: 0px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: default;
     z-index: 999;
+    min-width: 200px;
+    font-size: 1.5em;
+    overflow: visible;
+}
+
+@media(max-width: 600px){
+    .aux{
+        min-height: 250px ;
+    }
 }
 
 .aux {
     z-index: 998;
-    animation: eusoulindo 2s ease-in-out;
+    animation: eusoulindo 2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teste{
+    height: 150px; 
+    width: auto;
 }
 
 @keyframes eusoulindo {

@@ -55,11 +55,6 @@
     outline: none;
 }
 
-.inputEmail:focus{
-    border: none;
-    border-bottom: 1px solid black;
-}
-
 #submitbutton{
     background-color: #fd3f01;
     border: none;
