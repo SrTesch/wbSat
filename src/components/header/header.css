@@ -6,8 +6,10 @@ header {
     z-index: 1000;
     margin: 0;
     color: black;
-    background-color: #3b3b3bd3;;
+    background-color: #3b3b3bd3;
     /* background-color: #838383; */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 
 .nome-topo {

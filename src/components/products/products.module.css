@@ -10,10 +10,10 @@
 }
 
 .productSection{
-    background-color: #fff;
-    padding: 5px;
-    padding-bottom: 30px;
-    margin: 0;
+    background: linear-gradient(to bottom, #ffffff 0%, #c5c5c5 20%, #c5c5c5 100%);
+    padding: 30px 5px 30px 15px;
+    margin: 0px;
+    margin-top: 10px;
 }
 
 .title{

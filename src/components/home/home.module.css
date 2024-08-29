@@ -15,7 +15,7 @@
 .content {
     background-color: #008cba;
     border-radius: 0px 100px;
-    padding: 0px 50px;
+    padding: 15px 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +27,9 @@
     overflow: visible;
 }
 
+.content>h1{
+    font-size: 2em;
+}
 @media(max-width: 600px){
     .aux{
         min-height: 250px ;
