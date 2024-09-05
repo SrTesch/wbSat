@@ -1,59 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .homeSection {
-    padding-top: 80px; /* ajuste para a altura do header */
-    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px;
+    background-color: #f0f3f8;
     min-height: 400px;
-    display: flex;
-    overflow: visible; /* Para que o carro não seja visível fora da área */
-    flex-wrap: wrap;
-    height: fit-content;
-}
-
-.aux, .content {
-    flex: 1;
-}
-
-.content {
-    background-color: #008cba;
-    border-radius: 0px 100px;
-    padding: 15px 70px;
+    padding: 15px 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: default;
-    z-index: 999;
     min-width: 200px;
     font-size: 1.5em;
-    overflow: visible;
+    color: #464646;
 }
 
-.content>h1{
+.homeSection>h1{
     font-size: 2em;
 }
-@media(max-width: 600px){
-    .aux{
-        min-height: 250px ;
-    }
-}
 
-.aux {
-    z-index: 998;
-    animation: eusoulindo 2s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.teste{
-    height: 150px; 
-    width: auto;
-}
-
-@keyframes eusoulindo {
-    0% {
-        transform: scale(0.5); /* Tamanho inicial e posição do carro */
-    }
-    100% {
-        transform: scale(1); /* Tamanho final e posição do carro */
-    }
+.homeSection>p{
+    font-weight: lighter;
 }
