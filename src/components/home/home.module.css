@@ -2,10 +2,9 @@
 
 .homeSection {
     font-family: 'Roboto', sans-serif;
+    padding: 15px 200px;
     padding-top: 80px;
     background-color: #f0f3f8;
-    min-height: 400px;
-    padding: 15px 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +14,13 @@
     font-size: 1.5em;
     color: #464646;
 }
+@media(max-width: 999px) {
+    .homeSection{
+        padding: 15px 30px;
+        padding-top: 80px;
+    }
 
+}
 .homeSection>h1{
     font-size: 2em;
 }
