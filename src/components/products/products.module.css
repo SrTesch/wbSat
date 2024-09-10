@@ -1,21 +1,24 @@
-.teste{
-    background-color: red;
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Define o número de colunas automaticamente */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-items: center; /* Centraliza os itens no grid */
+    align-items: stretch; /* Alinha os itens verticalmente */
+    margin-top: 20px;
 }
 
-.products{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.productSection{
-    background: linear-gradient(to bottom, #ffffff 0%, #c5c5c5 20%, #c5c5c5 100%);
-    padding: 30px 5px 30px 15px;
-    margin: 0px;
+.productSection {
+    /*background: linear-gradient(to bottom, #ffffff 0%, #c5c5c5 20%, #c5c5c5 100%);*/
+    background-color: #f5f5f5;
+    padding: 30px 150px 30px 150px;
+    margin: 0;
     margin-top: 10px;
 }
 
-.title{
-    font-size: 3em;
+.teste { /* Estilo para os cards */
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    width: 100%; /* Garante que cada card ocupe toda a largura de sua célula */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
 }

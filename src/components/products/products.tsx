@@ -1,31 +1,71 @@
 import styles from './products.module.css'
-import Card from '../card'
-import Imagem1 from "../../assets/logo2.png"
-import OntrackingImage from "../../assets/ontracking.png"
+//import Card from '../card'
+//import Imagem1 from "../../assets/logo2.png"
+//import OntrackingImage from "../../assets/ontracking.png"
+//import apptrackerImage from "../../assets/appTracker.png"
+//import onAlertImage from "../../assets/onAlert.png"
+import productsImg from "../../assets/products.png"
+import platImg from "../../assets/platimg.png"
 export default function Products(){
     return(
         <div className={styles.productSection} id="productSection">
             <h1 className={styles.title} id='titleCards'>Serviços oferecidos</h1>
-            <div className={styles.products}>
+            <div className={styles.products} id='products'>
+                <img src={productsImg}/>
+                {/*
+                
                 <Card 
                     titulo="OnTracking"
-                    texto="Sistema de gerenciamento de rotas incrível sem defeitos"
+                    texto="Plataforma de rastreamento por GPS"
                     imagem={OntrackingImage}
-                    detailedText="Este é um sistema que visa gerenciar cada rota em que o automóvel passou"
-                    
+                    className="teste"
+                    />
+                    <Card 
+                    titulo="App Tracker"
+                    texto="Digitalização de tarefas e serviços de campo"
+                    imagem={apptrackerImage}
+                    className="teste"
+                    />
+                    <Card 
+                    titulo="OnAlert"
+                    texto="Centro de Monitoramento"
+                    imagem={onAlertImage}
+                    className="teste"
+                    />
+                    <Card 
+                    titulo="OnWall"
+                    texto="Monitoramento de multiplos ativos"
+                    imagem={Imagem1}
+                    className="teste"
                 />
                 <Card 
-                    titulo="OnPatrol"
-                    texto="Gerenciamento de patrulhas/Rondas de forma revolucionária"
-                    detailedText="Nesta Funcionalidade, temos controle de onde o funcionário está e ele deve fazer o check-in de acordo com a sua necessidade, usando um qrCode específico"
+                    titulo="OnRoad"
+                    texto="Rotas multidestino sem planejamento"
                     imagem={Imagem1}
-                />
-                <Card 
-                    titulo="OnDriving"
-                    texto="Sistema que avalia o comportamento do condutor de forma inteligente"
-                    detailedText="Sistema que avalia o comportamento do condutor de forma inteligente"
+                    className="teste"
+                    />
+                    <Card 
+                    titulo="OnRouting"
+                    texto="Planejamento de rotas multidestino"
                     imagem={Imagem1}
-                />
+                    className="teste"
+                    />
+                    <Card 
+                    titulo="OnReport"
+                    texto="Sistema de relatórios"
+                    imagem={Imagem1}
+                    className="teste"
+                    />
+                    <Card 
+                    titulo="OnTool"
+                    texto="Manutenção de Frotas"
+                    imagem={Imagem1}
+                    className="teste"
+                    />
+                */}
+            </div>
+            <div className={styles.products}>
+                <img src={platImg}/>
             </div>
         </div>
     )

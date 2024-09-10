@@ -20,9 +20,7 @@ export default function Header(){
                     </div>
                     <div className={ativar}>
                         <a href='#home' className='link-topo link-home'>Home</a>
-                        <a href='#sobre' className='link-topo'>Serviços</a>
-                        <a href='#skills' className='link-topo'>Skills</a>
-                        <a href='#projetos' className='link-topo' >Projetos</a>
+                        <a href='#products' className='link-topo'>Serviços</a>
                         <a href='#footer' className='link-topo'>Contato</a>
                     </div>
                 </nav>

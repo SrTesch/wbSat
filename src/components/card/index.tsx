@@ -21,13 +21,11 @@ const Card = (props: any) => {
                     className={styles.imagem}
                 />
                 <h1 className={styles.title}>{props.titulo}</h1>
-                <p className={styles.description}>{props.texto}</p>
-                <button className={styles.cta}>Saiba mais</button>
             </div>
             <div className={styles.back}>
                 <h1 className={styles.title}>{props.titulo}</h1>
                 <p className={styles.detailedDescription}>
-                    {props.detailedText}
+                    {props.texto}
                 </p>
             </div>
         </div>
