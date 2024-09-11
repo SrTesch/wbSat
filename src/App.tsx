@@ -4,6 +4,7 @@ import Products from "./components/products/products"
 import Home from "./components/home/home"
 import ScrollRevealComponent from "./components/scrollReveal/scrollReveal"
 import Header from "./components/header/header"
+import Constr from "./components/constr/constr"
 function App() {
   ScrollRevealComponent();
   
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Home />
       <Products />
+      <Constr />
       <Footer />
     </div>
   )
