@@ -1,27 +1,29 @@
 import styles from './products.module.css'
-//import Card from '../card'
+import Card from '../card'
 //import Imagem1 from "../../assets/logo2.png"
-import productsImg from "../../assets/products.png"
+//import productsImg from "../../assets/products.png"
 import platImg from "../../assets/platimg.png"
-//import cardsContent from './productsContent'
+import cardsContent from './productsContent'
 export default function Products(){
     return(
         <div className={styles.productSection} id="productSection">
             <h1 className={styles.title} id='titleCards'>Serviços oferecidos</h1>
             <div className={styles.products} id='products'>
                 {/*
-                {cardsContent.map((val:any, key:any)=>{
-                    return(
-                        <Card 
-                            titulo={val.titulo}
-                            texto={val.texto}
-                            imagem={val.img}
-                            className="teste"
-                        />   
-                    )
-                })}
-                */}
                 <img src={productsImg}/>
+            */}
+            {cardsContent.map((val:any, key:any)=>{
+                console.log(key)
+                return(
+                    <Card 
+                        titulo={val.titulo}
+                        texto={val.texto}
+                        imagem={val.img}
+                        foto={val.foto}
+                        className="teste"
+                    />   
+                )
+            })}
                 {/*
                 
                 <Card 

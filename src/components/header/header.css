@@ -6,7 +6,7 @@ header {
     z-index: 1000;
     margin: 0;
     color: black;
-    background-color: #ff4000d2;
+    background-color: #fc5d1f;
     /* background-color: #838383; */
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
@@ -66,7 +66,7 @@ header div {
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: #fff;
+    background-color: white;
     transition: width .8s;
 }
 

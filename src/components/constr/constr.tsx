@@ -1,8 +1,13 @@
-import HandymanIcon from '@mui/icons-material/Handyman';
+import foto1 from "../../assets/apptrackerfotos/01.jpg"
+import foto2 from "../../assets/apptrackerfotos/02.jpg"
 export default function Constr(){
     return(
         <div className="Construção">
-            <HandymanIcon className='teste' fontSize='large'/>Site em Construção
+            <div className="imagens">
+                <img src={foto1} alt=""
+                className="foto1"/>
+                <img src={foto2} alt="" className='foto1' />
+            </div>
         </div>
     )
 }

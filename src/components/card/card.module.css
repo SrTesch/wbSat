@@ -1,90 +1,94 @@
+/* Estilo do card */
 .card {
     width: 150px;
-    min-width: 150px;
-    height: 200px; /* Define uma altura fixa para o card */
+    min-width: 100px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    perspective: 1000px;
     cursor: pointer;
     position: relative;
+    transition-duration: .3s;
 }
 
-.card .front,
-.card .back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    transition: transform 0.6s;
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.233);
+    transform: translate(-10px, -10px);
+}
+
+.imgContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; /* Espaça os itens para que o botão fique fixo embaixo */
-    /* padding: 20px; */
-    padding-bottom: 10px;
-    box-sizing: border-box;
-}
-
-.card .front {
-    transform: rotateY(0deg);
-}
-
-.card .back {
-    transform: rotateY(180deg);
-    background-color: #ececec;
-    padding: 20px;
-}
-
-.card.flipped .front {
-    transform: rotateY(180deg);
-}
-
-.card.flipped .back {
-    transform: rotateY(0deg);
+    justify-content: center;
+    height: fit-content;
+    border-bottom: 1px solid #ccc;
 }
 
 .card .imagem {
-    width: 100%;
-    height: 160px;
+    width: 50%;
     object-fit: contain;
-    border-bottom: 1px solid #ccc;
     background-color: #f9f9f9;
+    margin: 10px 5px;
 }
 
 .card .title {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #333;
     margin: 10px 0px;
     font-weight: bold;
     text-align: center;
 }
 
-.card .description,
-.card .detailedDescription {
-    font-size: 1em;
+.card .description {
+    font-size: .9em;
     color: #666;
     margin: 10px;
     line-height: 1.5;
     text-align: center;
-    flex-grow: 1; /* Permite que o texto ocupe o espaço disponível */
 }
 
-.card .cta {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #008cba;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+/* Estilos do Modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido com efeito de vidro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: white; /* Fundo branco do modal */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 40%;
+    max-height: 90%;
+    overflow: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+.modalImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
     cursor: pointer;
+    color: #333;
 }
 
-.card .cta:hover {
-    background-color: #00688b;
+.closeButton:hover {
+    color: #f00; /* Efeito ao passar o mouse */
 }

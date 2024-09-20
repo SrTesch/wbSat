@@ -27,8 +27,20 @@ body{
   color: #525252;
   text-align: center;
   margin: 50px;
+  
 }
 
 .teste{
   margin-right: 30px;
+}
+
+.foto1{
+  height: 600px;
+}
+
+.imagens{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
 }
