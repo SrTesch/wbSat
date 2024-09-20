@@ -26,8 +26,8 @@ import onToolCont from "../../assets/contents/onTool.png"
 import OnDeliveryImage from "../../assets/logos/onDelivery.png"
 import onDeliveryCont from "../../assets/contents/onDelivery.png"
 
-//import OnBusImage from "../../assets/logos/onBus.png"
-//import OnBusCont from "../../assets/contents/onBus.png"
+// import OnBusImage from "../../assets/logos/onBus.png"
+// import OnBusCont from "../../assets/contents/onBus.png"
 
 import onNavigateImage from "../../assets/logos/OnNavigate.png"
 import onNavigateCont from "../../assets/contents/OnNavigate.png"
@@ -41,8 +41,8 @@ import onReportCont from "../../assets/contents/onReport.png"
 import onDocsImage from "../../assets/logos/OnDocs.png"
 import onDocsCont from "../../assets/contents/onDocs.png"
 
-//import onStatusImage from "../../assets/logos/OnStatus.png"
-//import onStatusCont from "../../assets/contents/onStatus.png"
+import onStatusImage from "../../assets/logos/OnStatus.png"
+import onStatusCont from "../../assets/contents/onStatus.png"
 
 import onDashImage from "../../assets/logos/onDash.png"
 import onDashCont from "../../assets/contents/onDash.png"
@@ -134,12 +134,12 @@ let cardsContent = [
         texto: "Manutenção de frotas",
         foto: onToolCont
     },
-    // {
-    //     titulo:"OnStatus",
-    //     img: onStatusImage,
-    //     texto: "Medição e controle de estados produtivos",
-    //     foto: onStatusCont
-    // },
+    {
+        titulo:"OnStatus",
+        img: onStatusImage,
+        texto: "Medição e controle de estados produtivos",
+        foto: onStatusCont
+    },
     {
         titulo:"OnDash",
         img: onDashImage,

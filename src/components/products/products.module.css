@@ -10,7 +10,7 @@
 .productSection {
     /*background: linear-gradient(to bottom, #ffffff 0%, #c5c5c5 20%, #c5c5c5 100%);*/
     background-color: #f5f5f5;
-    padding: 30px 150px 30px 150px;
+    padding: 30px 150px;
     margin: 0;
     margin-top: 10px;
 }
@@ -21,4 +21,24 @@
     margin: 10px;
     width: 100%; /* Garante que cada card ocupe toda a largura de sua célula */
     box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+.imgPlat{
+    width: fit-content;
+    margin: auto;
+}
+
+.foto{
+    max-width: 80vw;
+    width: 80vw;
+}
+
+@media(max-width: 999px) {
+    .products{
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .productSection{
+        padding: 10px 50px;
+    }
+
 }
