@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./card.module.css";
+import SearchIcon from '@mui/icons-material/Search';
 
 const Card = (props: any) => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -17,6 +18,7 @@ const Card = (props: any) => {
     return (
         <>
             <div className={styles.card} onClick={openModal}>
+                <SearchIcon className={styles.searchIcon}/>
                 <div className={styles.imgContainer}>
                     <img
                         src={props.imagem}
@@ -27,8 +29,6 @@ const Card = (props: any) => {
                 <h1 className={styles.title}>{props.titulo}</h1>
                 <p className={styles.description}>{props.texto}</p>
             </div>
-
-            {/* Modal */}
             {isModalOpen && (
                 <div className={styles.modalOverlay} onClick={handleOutsideClick}>
                     <div className={styles.modalContent}>
