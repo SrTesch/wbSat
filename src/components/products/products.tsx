@@ -9,7 +9,7 @@ export default function Products(){
                 <h1 className={styles.title} id='titleCards'>Serviços oferecidos</h1>
                 <div className={styles.products} id='products'>
                 {cardsContent.map((val:any, key:any)=>{
-                    key = "teste";
+                    console.log(key);
                     return(
                         <Card
                             titulo={val.titulo}
