@@ -17,7 +17,7 @@
 @media(max-width: 999px) {
     .homeSection{
         padding: 15px 30px;
-        padding-top: 80px;
+        padding-top: 100px;
     }
     .homeSection>p{
         display: none;

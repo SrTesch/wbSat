@@ -97,20 +97,27 @@ header div {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        /* Mantém o menu fora da tela inicialmente */
         transform: translateX(100%);
-        transition: transform 0.35s ease-in-out;
+        transition: transform 0.1s ease-in-out;
     }
 
-    /* Quando nav-active é aplicado, o menu aparece */
     .nav-active {
-        transform: translateX(0);
+        transform: translateX(0) !important; /* Mostra o menu ao alterar a classe */
     }
 
     .mobile-menu {
         display: block;
+        cursor: pointer;
+    }
+
+    .mobile-menu .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
     }
 }
+
 
 @media (max-width: 600px) {
     .nome-topo h1 {

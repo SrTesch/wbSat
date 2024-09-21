@@ -3,11 +3,11 @@ import "./header.css";
 import Logo from '../../assets/logo.png';
 
 export default function Header() {
-    const [menuAtivo, setMenuAtivo] = useState(false); // Usar um booleano para simplificar
+    const [menuAtivo, setMenuAtivo] = useState(false);
 
     const navList = () => {
-        setMenuAtivo(!menuAtivo); // Alterna entre true e false
-        console.log("Menu ativo: ", menuAtivo); // Verifique o valor no console
+        setMenuAtivo(!menuAtivo);
+        console.log("Estado do menu:", menuAtivo); // Verificando se o estado está alternando
     };
 
     return (
@@ -17,13 +17,11 @@ export default function Header() {
                     <a className='link-nome' href='#home'><img src={Logo} className="eusoulindo" alt="Logo" /></a>
                 </div>
                 <nav>
-                    {/* Botão hamburger */}
                     <div className="mobile-menu" onClick={navList}>
-                        <div className='line1'></div>
-                        <div className='line1'></div>
-                        <div className='line1'></div>
+                        <div className='line'></div>
+                        <div className='line'></div>
+                        <div className='line'></div>
                     </div>
-                    {/* Classe alterna com base no estado */}
                     <div className={menuAtivo ? 'nav-list nav-active' : 'nav-list'}>
                         <a href='#home' className='link-topo link-home'>Home</a>
                         <a href='#products' className='link-topo'>Serviços</a>

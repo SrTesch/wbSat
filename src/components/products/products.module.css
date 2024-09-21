@@ -1,6 +1,6 @@
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Define o número de colunas automaticamente */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Define o número de colunas automaticamente */
     gap: 20px; /* Espaçamento entre os cards */
     justify-items: center; /* Centraliza os itens no grid */
     align-items: stretch; /* Alinha os itens verticalmente */
