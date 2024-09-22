@@ -5,6 +5,7 @@ import Home from "./components/home/home"
 import ScrollRevealComponent from "./components/scrollReveal/scrollReveal"
 import Header from "./components/header/header"
 import AppTracker from "./components/appTracker/appTracker"
+import LandingPage from "./components/landingPage"
 function App() {
   ScrollRevealComponent();
   
@@ -15,6 +16,7 @@ function App() {
       <Products />
       <AppTracker />
       <Footer />
+      <LandingPage />
     </div>
   )
 }
